@@ -9,18 +9,14 @@
     <h1>九九の表</h1>
     <table class="border" border="1">
       <script>
-        //jの列を作る
         document.write('<tr>');
 
-        //jの列を記述するため、1から9の数字を繰り返しHTMLに記述する
         for(var j=1; j <= 9; j++){
           //document.write('<th>' + '</th>');
 
-        //j*kを繰り返すことで、計算結果をtdタグの中に表示する
           for(var k=1; k <=9; k++){
             document.write('<td>'+ k + "×" + j + "=" + j*k +'</td>');
           }
-        //ここでjの行を閉じる
           document.write('</tr>');
         }
       </script>
